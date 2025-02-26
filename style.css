@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: sans-serif;
+  transition: background 0.5s; 
+}
+
+#color-code {
+  font-size: 3em;
+  background-color: rgb(255, 255, 255);
+  color: #333;
+  border-radius: 20px;
+  padding: 20px;
+}
