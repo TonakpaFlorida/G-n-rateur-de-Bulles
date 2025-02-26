@@ -1,17 +1,34 @@
+/* Le body prend 100% de la hauteur totale, création d'un conteneur
+de type croix et un contenu et un contenu masqué */
 body {
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  font-family: sans-serif;
-  transition: background 0.5s; 
+    overflow: hidden;
+    cursor: crosshair;
+    min-height: 100vh;
+}
+.bubble {
+    position: absolute;
+    border-radius: 300px;
+    background-color: rgb(12, 22, 250, 0.4 );
+    opacity: 0;
+    animation: anim 7s;
+    filter: hue-rotate(0dcg);
+}
+@keyframes anim{
+    to{
+        top: -300px;
+        left: var(--left);
+        opacity: 1;
+        filter: hue-rotate(225deg);
+    }
 }
 
-#color-code {
-  font-size: 3em;
-  background-color: rgb(255, 255, 255);
-  color: #333;
-  border-radius: 20px;
-  padding: 20px;
+h2 {
+    font-size: 15rem;
+    font-weight: bold;
+    display: block;
+    unicode-bidi: isolate;
+    align-items: center;
+    justify-content: center;
+    color: gold;
+    opacity: 0.6;
 }
